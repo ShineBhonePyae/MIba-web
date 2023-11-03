@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+ <style>
+    .nav-item:hover .nav-link{
+        background-color: aliceblue;
+        color: black;
+    }
+
+    .dropdown-menu{
+        background-color: rgb(44, 43, 43);
+       color: white;   
+    }
+
+    .dropdown-item{
+        color: white;
+        background-color:  rgb(44, 43, 43);
+    }
+
+    #product:hover + #myproduct{
+        display: ;
+    }
+
+   
+ </style>
+<body>
+    <header>
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+                <a href="" class="navbar-brand"><span class="navbar-text">MyMenu</span></a>
+                <button class="navbar-toggler" data-bs-target="#mymenu" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+
+                <div id="mymenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-target="#myproduct" data-bs-toggle="dropdown">Product</a>
+                            <ul class="dropdown-menu" id="myproduct">
+                                <li><a href="" class="dropdown-item">Product A</a></li>
+                                <li><a href="" class="dropdown-item">Product B</a></li>
+                                <li><a href="" class="dropdown-item">Product C</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link">Service</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-target="#mycontact" data-bs-toggle="dropdown">Contact Us</a>
+                            <ul class="dropdown-menu" id="mycontact">
+                                <li><a href="" class="dropdown-item" >Facebook</a></li>
+                                <li><a href="" class="dropdown-item">Google</a></li>
+                                <li><a href="" class="dropdown-item">+9892362763</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="" class="nav-link">Login</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Register</a></li>
+                    </ul>
+                </div>
+                         
+            </nav>   
+        </div>
+       
+    </header>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

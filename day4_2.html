@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: whitesmoke;">
+    <main>
+        <h2>Registration Form</h2>
+     <form action="">
+        <table>
+            <tr>
+                <td><input type="text" name="userName" placeholder="Name"></td>
+            
+            
+                <td><input type="text" name="fullname" placeholder="Full Name"></td>
+            </tr>
+
+            <tr>
+                <td><input type="password" name="userPassword" placeholder="Password"></td>
+            
+            
+                <td><input type="password" name="confirmPassword" placeholder="Confirm Password"></td>
+            </tr>
+            <tr>
+                <td><input type="date" name="dob"></td>
+                <td><input type="email" name="email" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td>
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="male" checked>Male 
+                <input type="radio" name="gender" value="other">Other
+            </td>
+            
+            <td colspan="2">
+                <select name="major" id="">
+                    <option value="it">IT</option>
+                    <option value="business">Business Management</option>
+                    <option value="civil">Civil</option>
+                    <option value="accounting">Accounting</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="sport" id="" value="sport">Sport
+                    <input type="checkbox" name="reading" id="" value="reading">Reading
+                    <input type="checkbox" name="playing games" id="" value="playing games">Playing games
+                    <input type="checkbox" name="travelling" id="" value="travelling">Travelling
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Feedback</h3>
+                    <textarea name="feedback" id="" cols="50" rows="10"></textarea>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="file" name="profile" id="">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button name="submit">Sumit</button>
+                 
+                    <button name="cancel">Cancel</button>
+                </td>
+            </tr>
+            <p> <span style="color: blue;">UserName</span></p>
+        </table>
+     </form>
+    </main>
+</body>
+</html>

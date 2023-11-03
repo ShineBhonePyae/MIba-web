@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanAway;</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+
+        body{
+            background-color:gray;
+
+        }
+
+        table{
+            width: 100%;
+        }
+
+        td{
+            width: 50%;
+            padding: 10px;
+        }
+
+       main{
+        margin:20px 20% ;
+        background-color: whitesmoke;
+       }
+
+       header{
+        background-color: skyblue;
+        height: 50px;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 30px;
+       }
+
+       input[type=text]{
+        height: 30px;
+        width: 98%;
+       }
+
+       select{
+        height: 32px;
+        width: 98%;
+       }
+
+       input[type=radio]{
+        width: 20px;
+        height: 20px;
+       }
+
+       a{
+        text-decoration: none;
+       }
+
+       input[type=checkbox]{
+        height: 20px;
+        width: 20px;
+       }
+
+       button{
+        text-align: center;
+        width: 220px;
+        height: 43px;
+        background-color: chartreuse;
+        cursor: pointer;
+        transition: background-color 0.4s ease;
+        border: 0;
+        margin: 9% 350px; 
+        padding: 10px;
+        color: aliceblue;
+       }
+
+       button:hover{
+        background-color: rgb(72, 139, 6);
+        cursor: pointer;
+       }
+
+    </style>
+    
+</head>
+<main>
+    <form action="">
+ <header>REQUEST A QUOTE</header><br>
+ <table>
+    <tr>
+        <td>
+            <p>First Name <span style="color: red;">*</span></p>
+            <input type="text" name="firstName" placeholder="First Name">
+            <p style="font-size: 10px;">0 of 40 max characters</p>
+        </td>
+        <td>
+            <p>Last Name <span style="color: red;">*</span></p>
+            <input type="text" name="lastName" placeholder="Last Name">
+            <p style="font-size: 10px;">0 of 90 max characters</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Contact Number <span style="color: red;">*</span></p>
+            <input type="text" name="number" placeholder="First Name">
+        </td>
+        <td>
+            <p>Email <span style="color: red;">*</span></p>
+            <input type="text" name="email" placeholder="Last Name">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>State <span style="color: red;">*</span></p>
+            <select name="state" id="" >
+                <option value="">Please select your state</option>
+                <option value="ACT" >ACT</option>
+                <option value="NFW" >NFW</option>
+                <option value="NT"  >NT</option>
+                <option value="QLD" >QLD</option>
+                <option value="SA" >SA</option>
+                <option value="TAS" >TAS</option>
+                <option value="VIC" >VIC</option>
+                <option value="WA" >WA</option>
+            </select>
+        </td>
+        <td>
+            <p>Postcode <span style="color: red;">*</span></p>
+            <input type="text" placeholder="Your Postcode">
+        </td>
+    </tr>
+    <tr><td><b>I'm a</b></td></tr>
+    <tr>
+        <td>
+            <input type="radio" name="newCustomer" > <span>New Customer</span>
+        </td>
+        <td>
+            <input type="radio" name="newCustomer" > <span>New Customer</span>
+        </td>
+    </tr>
+    <tr><td><b>I need a solution for my</b></td></tr>
+    <tr>
+        <td>
+            <input type="radio" name="business" id=""> <span>Business</span>
+        </td>
+        <td>
+            <input type="radio" name="home" id=""> <span>Home</span>
+        </td>
+    </tr>
+    <tr>
+        <td>My Industry is</td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <select name="industry" id="" style="width: 90;">
+                <option value="">Please select</option>
+                <option value="automotive">Automotive</option>
+                <option value="construction">Construction/Engineering</option>
+                <option value="energy">Energy/utility</option>
+                <option value="governmentAndDefence">government and Defence</option>
+                <option value="hospitality">Hospitality</option>
+                <option value="logistics">Logistics</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="medical">Medical</option>
+                <option value="mining">Mining</option>
+                <option value="propertyManagement">Property/ Facilities Management</option>
+                <option value="retail">Retail</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <p style="color: blue;"><a href="https://skipbins.cleanaway.com.au/">
+            <span>Looking for a skip? Browse our skips including sizes and prices here.</span></a></p>
+        </td>
+    </tr>
+    <tr><td><b>The services I am interested in are</b></td></tr>
+    <tr>
+        <td>
+                <input type="checkbox" name="skipbins" id="" value="skipBinsAndSteelCages">
+                <span>Skip bins and steel cages</span>
+        </td>
+        <td>
+                <input type="checkbox" name="organicAndFoodRecycling" id="" value="organicAndFoodRecycling">
+                <span>Organic and food recycling</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <input type="checkbox" name="healthServiceCollection" id="" value="healthServiceCollection">
+                <span>Health Service Collection</span>
+        </td>
+        <td>
+                <input type="checkbox" name="greaseTrapServicing" id="" value="greaseTrapServicing">
+                <span>Grease trap servicing</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <input type="checkbox" name="septicwaste" id="" value="septicWaste">
+                <span>Septic Waste</span>
+        </td>
+        <td>
+                <input type="checkbox" name="generalWasteAndRecyclingServices" id="" value="generalWasteAndRecyclingServices">
+                <span>General Waste and recycling services</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <input type="checkbox" name="productDestruction" id="" value="productDestruction">
+                <span>Product Destruction</span> 
+                
+        </td>
+        <td>
+                <input type="checkbox" name="bahroomAndHygieneServices" id="">
+                <span>Bathroom and hygiene services</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <input type="checkbox" name="liquidWaste" id="" value="liquidWaste">
+                <span>Liquid Waste</span> 
+    
+        </td>
+        <td>
+                <input type="checkbox" name="hazardouswaste" id="" value="hazardouswaste">
+                <span>Hazardous Waste</span> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <input type="checkbox" name="industrialServicesAndCleaning" id="" value="industrialServicesAndCleaning">
+                <span>Industrial Services and cleaning</span>     
+        </td>
+        <td>
+                <input type="checkbox" name="workshopWasteSolution" id="" value="workshopWasteSolution">
+                <span>Waste oil,parts washers and workshop waste solution</span> 
+        </td>
+        </tr>
+        <tr><td><b>How did you hear about us</b></td></tr>
+        <tr>
+            <td colspan="2">
+                <select name="referral" id="" style="width: 98%>
+                    <option value="">Referral</option>
+                    <option value=""></option>
+                    <option value="internetSearch">Internet Search</option>
+                    <option value="radio">Radio</option>
+                    <option value="printAdvert">Print Advert</option>
+                    <option value="wordOfMouth">Word of Mouth</option>
+                    <option value="other">Other</option>
+                </td>
+                </select>
+            </td>
+        </tr>
+        <tr><td><b>Anything else we need to know?</b></td></tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" name="userFeedback" placeholder="Write Your Message" style="width: 98%; height: 300px;">
+                <p style="font-size: 10px;">0 of 1500 max characters</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" name="consentorNot" id="">
+                <span>I consent to receive Cleanaway’s marketing communications (including offers, service and product updates, and events).
+                </span>
+            </td>
+        </tr>
+ </table>
+    <div style="background-color: rgb(250, 228, 215); text-align: center; margin: 9% 250px; padding: 20px;" >
+        <input type="checkbox" name="robotOrNot" id="">
+        <span>I'm not a Robot</span>
+    </div>
+    <div style="padding: 1%;">
+        <p>By clicking submit, you consent to Cleanaway Waste Management Pty Ltd, its related entities and their agencies using your name and 
+            contact details for the relevant purposes as set out above in accordance with Cleanaway Waste Management Terms and Privacy Policy. 
+            Cleanaway complies with the Australian Privacy Principles and respects your privacy; you can opt out from receiving communications 
+            at any time.</p>
+    </div>
+    <div>
+        <button>
+            SUBMIT
+        </button>
+    </div>
+</form>
+</main>
+<body>
+    
+</body>
+</html>

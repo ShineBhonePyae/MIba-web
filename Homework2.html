@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="img/logo.png">
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(64, 64, 64);
+    }
+    header{
+        position: sticky;
+        top: 0;
+        background-color: white;
+        box-shadow:black;
+        font-size: 30px;
+    }
+    table{
+            width: 100%;
+        }
+        td{
+           
+            padding-top: 20px;
+        }
+        input{
+            text-align: center;
+            height: 20px; width: fit-content;}
+        button{
+            font-size: 15px;
+            height: 30px;
+            width: 120px;
+            background-color: rgb(102, 102, 230);
+            color: aliceblue;
+            cursor: pointer;
+            transition: color 1s ease;
+            border: 0;
+            border-radius: 40px;
+
+        }
+        button:hover{
+            color: rgb(100, 101, 102);
+
+        }
+        
+   </style>
+   
+</head>
+
+<body style="background-color:darkgray;"> 
+    <header style="text-align: center; background-color: aliceblue; height: 50px; padding-top: 20px;" ><img src="img/logo.png" alt="logo" width="30px" height="30px" style="vertical-align: middle;">
+       <span style="vertical-align: middle;"> SIARGAO ISLAND INSTITUTE OF TECHNOLOGY</span>
+    </header>
+    <main style="background-color: whitesmoke; margin: 20px 20%; border-radius: 20px;">
+    <form action="" style="margin: 20px;">
+        <div style="text-align: center;">
+       <p> 
+        <img src="img/default-male.jpg" alt="profile" style="width: 100px; height: 100px;"> <br>
+        <button style="height: 30px; width: 85px;">
+        <input type="file" name="fileInput" id="" style="display:none;">Take a photo
+    </button>
+    </p>
+    </div>
+        
+    <table>
+        <tr>
+            <td style="width: 33%;">
+                <p style="font-size: 15px;">First Name <span style="color: red;">*</span></p>
+                <input type="text" name="firstName" style="width: 97%;">
+            </td>
+            <td style="width: 33%;">
+                <p style="font-size: 15px;">Middle Name</p>
+                <input type="text" name="middleName" style="width: 97%;">
+            </td>
+            <td style="width: 20%;">
+                <p style="font-size: 15px;">Last Name <span style="color:red;">*</span></p>
+                <input type="text" name="lastname" style="width: 97%;">
+            </td>
+            <td>
+                <p style="font-size: 15px;">Suffix</p>
+                <input type="text" name="suffix" style="width: 97%;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Learner's Ref Number</p>
+                <input type="text" name="refNumber" style="width: 97%;">
+            </td>
+        </tr>
+    </table>
+    
+    <table>
+        
+        <tr>
+            <td><h3 style="color: green;">COURSE YEAR</h3></td>
+        </tr>
+        <tr>
+           <td style="width: 33%;"><p>Course <span style="color: red;">*</span></p>
+            <select name="course" id=""  style="width: 99%;height: 25px;">
+                <option value=""></option>
+               <optgroup label="GROUP1"></optgroup>
+               <option value="a">A</option>
+               <option value="b">B</option>
+               <option value="c">C</option>
+               <optgroup label="GROUP2"></optgroup>
+               <option value="d">D</option>
+               <option value="e">E</option>
+               <option value="f">F</option>
+            </select>
+        </td> 
+            <td style="width: 33%;">
+                <p>Year Level <span style="color: red;">*</span></p>
+                <select name="year" id="" style=" width:99%; height: 25px;">
+                    <option value=""></option>
+                    <option value="firstYear">First Year</option>
+                    <option value="secondYear">Second Year</option>
+                    <option value="thirdYear">Third Year</option>
+                    <option value="fourthYear">Fourth Year</option>
+                </select>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td><h3 style="color: green;">PERSONAL INFO</h3></td>
+        </tr>
+        <tr>
+            <td style="width: 33%;">
+                <p>Gender <span style="color: red;">*</span></p>
+                <select name="gender" id="" style="width: 99%;height: 25px;">
+                    <option value=""></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>   
+                </select>
+            </td>
+            <td style="width: 33%;">
+                <p>Civil Status <span style="color: red;">*</span></p>
+                <select name="civilstatus" id="" style="width: 99%;height: 25px;">
+                    <option value=""></option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="widowed">Widowed</option>
+                </select>
+            </td>
+            <td>
+                <p>Birth Date <span style="color: red;">*</span></p>
+                <input type="date" name="bod" id="" style="width: 99%;height: 25px;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width: 33%;">
+                <p>Birth Place <span style="color: red;">*</span></p>
+                <input type="text" style="width: 99%;height: 25px;">
+            </td>
+            <td>
+                <p>Nationality <span style="color: red;">*</span></p>
+                <input type="text" name="nationality" style="width: 99%;height: 25px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Religion <span style="color: red;">*</span></p>
+                <input type="text" name="religion" style="width: 98% ; height: 25px;">
+            </td>
+            <td>
+                <p>Ethnicity</p>
+                <input type="text" name="ethnicity" style="width: 99% ; height: 25px;">
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+           <td colspan="3"> <h3 style="color: green;">EDUCATIONAL BACKGROUND</h3></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>Preschool</p>
+                <input type="text" name="preschool" id="" style="width: 99%; height: 25px;">
+            </td>
+
+            <td>
+                <p>School Year</p>
+                <input type="text" name="year" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>Elementary</p>
+                <input type="text" name="elementary" id="" style="width: 99%; height: 25px;">
+            </td>
+
+            <td>
+                <p>School Year</p>
+                <input type="text" name="year" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>Junior High</p>
+                <input type="text" name="junior" id="" style="width: 99%; height: 25px;">
+            </td>
+
+            <td>
+                <p>School Year</p>
+                <input type="text" name="year" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>Senior High</p>
+                <input type="text" name="senior" id="" style="width: 99%; height: 25px;">
+            </td>
+
+            <td>
+                <p>School Year</p>
+                <input type="text" name="year" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>Alternative Learning System(ALS)</p>
+                <input type="text" name="ALS" id="" style="width: 99%; height: 25px;">
+            </td>
+
+            <td>
+                <p>School Year</p>
+                <input type="text" name="year" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>College</p>
+                <input type="text" name="college" id="" style="width: 99%; height: 25px;">
+            </td>
+
+            <td>
+                <p>School Year</p>
+                <input type="text" name="year" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><h3 style="color: green;"> CONTACT & ADDRESS</h3></td>
+            <td></td>
+        </tr>
+        <tr>
+           <td style="width: 33%;">
+            <p>Mobile Phone <span style="color: red;">*</span></p>
+            <input type="telephone" name="phone" placeholder="09XXXXXXXXX" style="width: 99%; height: 25px;">
+        </td> 
+        <td></td>
+        </tr>
+        <tr>
+            <td style="width: 33%;">
+                <p><h4>Permanent Address <span style="color: red;">*</span></h4></p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="width: 33%;">
+                <p style="font-size: 13px;">House No. / Street / Subdivision / Building <span style="color: red;">*</span></p>
+                <input type="text" name="address" style="width: 99%; height: 25px;">
+            </td>
+            <td style="width: 33%;">
+                <p style="font-size: 13px;">Province</p>
+                <select name="province" id="" style="width: 99%; height: 25px;">
+                    <option value=""></option>
+                    <option value="A">a</option>
+                    <option value="B">b</option>
+                    <option value="C">c</option>
+                    <option value="D">d</option>
+                    <option value="E">e</option>
+                    <option value="F">f</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="font-size: 13px;">City</p>
+                <select name="city" id="" style="width: 99%; height: 25px;">
+                    <option value=""></option>
+                    <option value="man">လူသား</option>
+                    <option value="nam">သားလူ</option>
+                </select>
+            </td>
+            <td>
+                <p style="font-size: 13px;">Barangay</p>
+                <select name="city" id="" style="width: 99%; height: 25px;">
+                    <option value=""></option>
+                    <option value="man">လူသား</option>
+                    <option value="nam">သားလူ</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="color: blue;">
+               <input type="checkbox" name="confirmation" id="" value="confirmed">
+                Check if current address is the same with permanent address. 
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 33%;">
+                <p><h5>Current Address <span style="color: red;">*</span></h5></p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="width: 33%;">
+                <p style="font-size: 13px;">House No. / Street / Subdivision / Building <span style="color: red;">*</span></p>
+                <input type="text" name="address" style="width: 99%; height: 25px;">
+            </td>
+            <td style="width: 33%;">
+                <p style="font-size: 13px;">Province</p>
+                <select name="province" id="" style="width: 99%; height: 25px;">
+                    <option value=""></option>
+                    <option value="A">a</option>
+                    <option value="B">b</option>
+                    <option value="C">c</option>
+                    <option value="D">d</option>
+                    <option value="E">e</option>
+                    <option value="F">f</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="font-size: 13px;">City</p>
+                <select name="city" id="" style="width: 99%; height: 25px;">
+                    <option value=""></option>
+                    <option value="man">လူသား</option>
+                    <option value="nam">သားလူ</option>
+                </select>
+            </td>
+            <td>
+                <p style="font-size: 13px;">Barangay</p>
+                <select name="city" id="" style="width: 99%; height: 25px;">
+                    <option value=""></option>
+                    <option value="man">လူသား</option>
+                    <option value="nam">သားလူ</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3> SOCIAL MEDIA ACCOUNTS</h3>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Email <span style="color: red;">*</span></p>
+                <input type="email" name="userEmail" style="width: 99%;height: 25px;">
+            </td>
+            <td>
+                <p>Facebook</p>
+                <input type="text" name="userInput" style="width: 99%;height: 25px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Skype</p>
+                <input type="text" name="userSkype" style="width: 99%;height: 25px;">
+            </td>
+            <td>
+                <p>Zoom</p>
+                <input type="text" name="userZoom" style="width: 99%;height: 25px;">
+            </td>
+        </tr>
+    </table>
+    <table>
+       <tr> 
+        <td colspan="3">
+            <h3 style="color: green;">PARENTS</h3>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <h4 >Father's Name <span style="color: red;">*</span></h4>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <p>First Name </p>
+            <input type="text" name="father" style="width: 99%; height: 25px;">
+        </td>
+        <td>
+            <p>Middle Name</p>
+            <input type="text" name="fatherMiddle" style="width: 99%; height: 25px;">
+        </td>
+        <td>
+            <p>Last Name <span style="color: red;">*</span></p>
+            <input type="text" name="fatherlast" style="width: 99%; height: 25px;">
+        </td>
+    </tr>
+    </table>
+    <table>
+        <tr>
+           <td> 
+            <p>Father's Phone No.</p>
+            <input type="telephone" name="father'sNo" style="width: 99%; height: 25px;">
+        </td>
+        
+            <td>
+                <p>Father's Occupation</p>
+                <input type="text" name="father'sjob" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+    </table>
+    
+    <table>
+        
+     <tr>
+         <td colspan="3">
+             <h4 >Mother's Maiden Name <span style="color: red;">*</span></h4>
+         </td>
+         </tr>
+         <tr>
+         <td>
+             <p>First Name </p>
+             <input type="text" name="mother" style="width: 99%; height: 25px;">
+         </td>
+         <td>
+             <p>Middle Name</p>
+             <input type="text" name="motherMiddle" style="width: 99%; height: 25px;">
+         </td>
+         <td>
+             <p>Last Name <span style="color: red;">*</span></p>
+             <input type="text" name="motherlast" style="width: 99%; height: 25px;">
+         </td>
+     </tr>
+     </table>
+     <table>
+         <tr>
+            <td> 
+             <p>Mother's Phone No.</p>
+             <input type="telephone" name="mother'sNo" style="width: 99%; height: 25px;">
+         </td>
+         
+             <td>
+                 <p>Mother's Occupation</p>
+                 <input type="text" name="mother'sjob" style="width: 99%; height: 25px;">
+             </td>
+         </tr>
+     </table>
+     <table>
+     <tr>
+         <td colspan="3">
+             <h4 >Guardian's Name <span style="color: red;">*</span></h4>
+         </td>
+         </tr>
+         <tr>
+         <td>
+             <p>First Name </p>
+             <input type="text" name="guardian" style="width: 99%; height: 25px;">
+         </td>
+         <td>
+             <p>Middle Name</p>
+             <input type="text" name="guardianMiddle" style="width: 99%; height: 25px;">
+         </td>
+         <td>
+             <p>Last Name <span style="color: red;">*</span></p>
+             <input type="text" name="guardianlast" style="width: 99%; height: 25px;">
+         </td>
+     </tr>
+     </table>
+     <table>
+        <tr>
+           <td> 
+            <p>Guardian's Phone No.</p>
+            <input type="telephone" name="guardian'sNo" style="width: 99%; height: 25px;">
+        </td>
+        
+            <td>
+                <p>Guardian's Occupation</p>
+                <input type="text" name="guardian'sjob" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+    </table>
+         <table>
+         <tr>
+            <td>
+                <p style="color: green;">
+                    ADDITIONAL INFORMATION
+                </p>
+            </td>
+            <td></td>
+         </tr>
+         <tr>
+            <td style="width: 33%;">
+                <p>DSWD Household NO.</p>
+                <input type="text" name="houseNo" id="" style="width: 99%; height: 25px;">
+            </td>
+            <td style="width: 33%;">
+                <p>NO of Members in the Family/Household</p>
+                <select name="nooFamilyMembers" id="" style="width: 99%; height: 25px;">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="2">
+                <p>Maritial status: Parent Living Together?</p>
+                <input type="radio" name="yes" id="">Yes
+                <input type="radio" name="no" id="">No
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <p>Father Remarried?</p>
+                <input type="radio" name="yes" id="">Yes
+                <input type="radio" name="no" id="">No
+            </td>
+            <td>
+                <p>Mother Remarried?</p>
+                <input type="radio" name="yes" id="">Yes
+                <input type="radio" name="no" id="">No
+            </td>
+         </tr>
+         <tr>
+            <td colspan="2">
+                <p>With whom will you stay/live during school year?</p>
+            </td>
+         </tr>
+     </table>
+     <input type="radio" name="stayingplace">With Parents
+     <input type="radio" name="stayingplace">With Guardian
+     <input type="radio" name="stayingplace">With Relatives
+     <input type="radio" name="stayingplace">With Employer
+     <table>
+        <tr>
+            <td>
+                <p>Boarding House</p>
+                <input type="radio" name="yes" id="">Yes
+                <input type="radio" name="no" id="">No
+            </td>
+            <td>
+                <p>
+                    Boarding House Owner
+                </p>
+                <input type="text" name="bhouseowner" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    Boarding Address
+                </p>
+                <input type="text" name="bhouseaddress" style="width: 99%; height: 25px;">
+            </td>
+            <td>
+                <p>
+                    Boarding contact No.
+                </p>
+                <input type="text" name="bhousecontact" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+            <tr>
+                <td>
+                    <p>Is your residence</p>
+                    <input type="radio" name="residence" id="">Rented
+                    <input type="radio" name="residence" id="" >Owned
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>Family Monthly Income(estimated)</p>
+                    <input type="text" name="fmi" style="width: 48%; height: 25ppx;">
+                </td>
+                
+            </tr>
+     </table>
+     <table>
+        <tr>
+            <td colspan="5">
+                <p>Source of Financial Support</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="fs" id="">Parents
+            </td>
+            <td>
+                <input type="radio" name="fs" id="">Grandparents
+            </td>
+            <td>
+                <input type="radio" name="fs" id="">Working/Self-supporting
+            </td>
+            <td>
+                <input type="radio" name="fs" id="">Other(Pls.specify)
+            </td>
+            <td>
+                <input type="text" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+     </table>
+     <table>
+        <tr>
+            <td colspan="3">
+                <h3 style="color: green;">SCHOLARSHIP</h3>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <p>Type of Scholarship/Grant Availed:</p>  
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="checkbox" name="" id="">Tertiary Education Subsidy
+        </td>
+        <td>
+            <input type="checkbox">Ched Tulong-Dunong 
+        </td>
+        <td>
+            <input type="checkbox">PHILSAGA 
+        </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="checkbox" name="" id="">Provincial
+        </td>
+            <td>
+            <input type="checkbox">Municipal
+        </td>
+            <td>
+            <input type="checkbox">PTO-ADS
+        </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="checkbox" name="" id="">LGU San Francisco
+        </td>
+        <td>
+            <input type="checkbox"> NCIP - CARAGA
+        </td>
+        <td>
+            <input type="checkbox">Student Assistant
+        </td>
+        </tr>
+     </table>
+     <table>
+        <tr>
+            <td style="width:33% ;"">
+                <p>Amount Granted</p>
+                <input type="text" name="" style="height: 25px; width: 99%;">
+                <p>Award Number</p>
+                <input type="text" name="" style="height: 25px; width: 99%;">
+            </td>
+            <td style="width: 33%; padding: 20px;">
+                <p>if any Upload the Notice of Award/Certification</p>
+                <img src="img/awardCertificate.jpg" alt="awardCertificate" style="width: 50%; margin-left: 25%; border-radius: 15px;">
+                <p style="text-align: center;"><button style=" background-color:aquamarine;">
+                    Take a Photo
+                </button></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h3 style="color: green;">HEALTH PROFILE</h3>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 33%;">
+                <p>Blood Type</p>
+                <select name="bloodType" id="" style="width: 99%; height: 25px;">
+                    <option value=""></option>
+                    <option value="A+">A<sup>+</sup></option>
+                    <option value="A-">A<sup>-</sup></option>
+                    <option value="AB+">AB<sup>+</sup></option>
+                    <option value="AB-">AB<sup>-</sup></option>
+                    <option value="B+">B <sup>+</sup></option>
+                    <option value="B-">B <sup>-</sup></option>
+                    <option value="O+">O<sup>+</sup></option>
+                    <option value="O-">O<sup>-</sup></option>
+
+                </select>
+            </td>
+            <td style="width: 33%;">
+                <p>WHEN WAS THE LAST HOSPITALIZATION</p>
+                <input type="date" name="dateofhospitalization" id="" style="width: 99%; height: 25px;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>ALLERGY/IES</p>
+                <input type="text" name="allergies" style="width: 99%; height: 33px;">
+            </td>
+        </tr>
+     </table>
+     <table>
+        <tr>
+            <td colspan="3">
+                <h5>FAMILY HISTORY OF DISEASES AND DISORDERS</h5>
+               
+            </td>
+           
+        </tr>
+        <tr>
+            <td style="width: 33%;">
+                <p>(Check all that applies to you)</p>
+                <input type="checkbox" name="diseases" id="">Diabetes
+            </td>
+            <td style="width: 33%;">
+                <input type="checkbox" name="diseases" id="">Hypertension
+            </td>
+            <td>
+                <input type="checkbox" name="diseases" id="">Cardiac Problems
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 33%;">
+                <input type="checkbox" name="diseases" id="" >Asthma
+
+            </td>
+            <td style="width: 33%;">
+                <input type="checkbox" name="diseases" id="">Aneurysm
+            </td>
+            <td style="width: 33%;">
+                <input type="checkbox" name="diseases" id="">Stroke
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 33%;">
+                <input type="checkbox" name="diseases" id="">Alzheimer
+            </td>
+            <td style="width: 33%;">
+                <input type="checkbox" name="diseases" id="">Dengue
+            </td>
+            <td>
+                <input type="checkbox" name="diseases" id="">Malaria
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="checkbox" name="diseases" id="">Typhoid Fever
+
+            </td>
+        </tr>
+     </table>
+     <h3 style="color: green; padding-top: 20px;">ACADEMIC/RELIGIOUS/SPORTS/COMMUNITY CLUBS AND ORGANIZATIONS</h3>
+     <p style="padding-top: 20px;">Are you a member of any gov't sponsored organization/program? Specify name of organization/program <br>
+        <input type="text" name="userinput" style="width: 50%; height:30px;">
+     </p>
+     <p style="padding-top: 20px;">
+        Are you a member of any non-gov't sponsored organization/program? Specify name of organization/program <br>
+        <input type="text" name="userdetail" style="width: 50%; height:30px; ">
+     </p>
+     <p style="padding-top: 20px;">
+        Do you receive any benefits from this organization/program? Please specify <br>
+        <input type="text" name="specification" style="width: 50%; height:30px;">
+     </p>
+
+     <h3 style="color: green; padding-top: 20px;">PERSONAL CONCERNS</h3>
+     <p style="padding-top: 20px;">Health/Physical Problems <br>
+        <input type="text" name="physicalhealth" style="width: 50%; height:30px;">
+     </p>
+     <p style="padding-top: 20px;">
+        Behavior/Mental Concerns <br>
+        <input type="text" name="mentalhealth" style="width: 50%; height:30px; ">
+     </p>
+     <p style="padding-top: 20px;">
+        Disability <br>
+        <input type="text" name="disasbleornot" style="width: 50%; height:30px;">
+     </p>
+
+     <h3 style="color: green; padding-top: 20px;"> DOCUMENTS</h3>
+              
+     <p style="color: green; margin-left: 38%;">SELECT STUDENT TYPE <span style="color: red;">*</span></p>
+     <p style="text-align: center;"><select name="studenType" id="" style="width: 40%; height: 25px; padding-bottom: 20px;">
+        <option value=""></option>
+        <option value="freshgraduade">Fresh Graduade</option>
+        <option value="newStudent">New Student(ALS passer)</option>
+        <option value="transferee">Transferee</option>
+        <option value="x-enrollee">X-Enrollee</option>
+     </select></p>
+     
+     
+    </form>
+    <div style="background-color: green; padding: 20px; height: 200px;">
+       <div>
+           <h3 style="color: white;">ONLINE CLASS SURVEY</h3>
+           <p style="color: white;">
+            <input type="radio" name="survey">I'M CAPABLE FOR ONLINE CLASS <br>
+            <input type="radio" name="suevey">I'M NOT CAPABLE FOR ONLINE CLASS</p>
+        </div>
+    </div>
+    <div style="margin: 25px 45px;" >
+        <input type="checkbox" name="" id="">
+        <span>I confirm that the information I have given in this form is true, complete and accurate. I agree to fill-out this Student Information Form (SIF) and hereby authorize sharing of the information furnished on this form with SIARGAO ISLAND INSTITUTE OF TECHNOLOGY in accordance with the Philippine Data Privacy Act of 2012.</span>
+
+    </div>
+    <hr>
+    <button style="margin: 30px;">Submit</button>
+</main>
+
+</body>
+</html>
